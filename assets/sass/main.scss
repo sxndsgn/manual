@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@import 'partials/variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Overpass+Mono:wght@300..700&display=swap');
 
@@ -12,3 +12,23 @@
   font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 4rem;
+  font-family: Overpass, sans-serif;
+  background-color: $color-neutral;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
