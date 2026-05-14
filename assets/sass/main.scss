@@ -1,0 +1,14 @@
+@use 'variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Overpass+Mono:wght@300..700&display=swap');
+
+
+@font-face {
+  font-family: 'Movement';
+  src: url('/fonts/Movement-Variable.woff2') format('woff2-variations'),
+       url('/fonts/Movement-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+

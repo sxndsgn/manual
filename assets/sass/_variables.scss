@@ -1,0 +1,296 @@
+$color-primary: #623fbf;
+$color-primary-light: #C0B1FB;
+$color-primary-medium-light: #A189FA;
+$color-primary-very-dark: #311E7B;
+
+$color-secondary: #dff249;
+$color-secondary-light: #F2FAB6;
+$color-secondary-medium-light: #ECF792;
+
+$color-accent: #f472f0;
+$color-accent-light: #FBC7F9;
+$color-accent-medium-light: #F8AAF6;
+$color-accent-very-dark: #B756B4;
+
+$color-neutral: #F9F9F9;
+$color-neutral-light: #9D9D9D;
+$color-neutral-medium-light: #6C6C6C;
+$color-neutral-very-dark: #0A0A0A;
+
+$color-info: #586DF5;
+$color-info-light: #B5B9E4;
+$color-info-medium-light: #9097D6;
+
+$color-warning: #E56F07;
+$color-warning-light: #F5C59C;
+$color-warning-medium-light: #EFA96A;
+
+$color-success: #9CFF84;
+$color-success-light: #cdffc0;
+$color-success-medium-light: #b5fba4;
+
+$color-error: #E02431;
+$color-error-light: #F3A7AD;
+$color-error-medium-light: #EC7C83;
+
+
+$typography: (
+  
+  'h1': (
+    'family': 'Movement',
+    'weight': 'Black',      
+    'size': 89px,
+    'rem': 5.6rem,
+    'case': uppercase,
+    'line-height': 1,       
+    'letter-spacing': -0.01em, 
+    'max-width': 650px
+  ),
+  
+  'h2': (
+    'family': 'Overpass Mono',
+    'weight': 'Bold',       
+    'size': 67.34px,
+    'rem': 4.2rem,
+    'case': uppercase,
+    'line-height': 1,       
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h3': (
+    'family': 'Overpass Mono',
+    'weight': 'Bold',
+    'size': 50.52px,
+    'rem': 3.158rem,
+    'case': uppercase,
+    'line-height': 1,       
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h4-mono': (
+    'family': 'Overpass Mono',
+    'weight': 'Bold',
+    'size': 37.9px,
+    'rem': 2.369rem,
+    'case': lowercase,
+    'line-height': 1,       
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h4-semibold': (
+    'family': 'Overpass',
+    'weight': 'SemiBold',
+    'size': 37.9px,
+    'rem': 2.369rem,
+    'case': lowercase,
+    'line-height': 1,       
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h4': (
+    'family': 'Overpass',
+    'weight': 'Bold',
+    'size': 37.9px,
+    'rem': 2.369rem,
+    'case': lowercase,
+    'line-height': 1,       
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h5-semibold': (
+    'family': 'Overpass',
+    'weight': 'SemiBold',
+    'size': 28.43px,
+    'rem': 1.777rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h5-regular': (
+    'family': 'Overpass Mono',
+    'weight': 'Regular',
+    'size': 28.43px,
+    'rem': 1.777rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h5-light': (
+    'family': 'Overpass Mono',
+    'weight': 'Light',
+    'size': 28.43px,
+    'rem': 1.777rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h6-bold': (
+    'family': 'Overpass',
+    'weight': 'Bold',
+    'size': 21.33px,
+    'rem': 1.333rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h6-mono-bold': (
+    'family': 'Overpass Mono',
+    'weight': 'Bold',
+    'size': 21.33px,
+    'rem': 1.333rem,
+    'case': lowercase,
+    'line-height': 1.35,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h6-semibold': (
+    'family': 'Overpass',
+    'weight': 'Bold',      
+    'size': 21.33px,
+    'rem': 1.333rem,
+    'case': lowercase,
+    'line-height': 1.35,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h6-medium': (
+    'family': 'Overpass Mono',
+    'weight': 'Medium',
+    'size': 21.33px,
+    'rem': 1.333rem,
+    'case': lowercase,
+    'line-height': 1.35,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'h6-light': (
+    'family': 'Overpass',
+    'weight': 'Light',
+    'size': 21.33px,
+    'rem': 1.333rem,
+    'case': lowercase,
+    'line-height': 1.35,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'p-semibold': (
+    'family': 'Overpass',
+    'weight': 'SemiBold',
+    'size': 16px,
+    'rem': 1rem,
+    'case': lowercase,
+    'line-height': 1.5,     
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'p': (
+    'family': 'Overpass',
+    'weight': 'Light',
+    'size': 16px,
+    'rem': 1rem,
+    'case': lowercase,
+    'line-height': 1.5,     
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'p-italic': (
+    'family': 'Overpass',
+    'weight': 'Italic',
+    'size': 16px,
+    'rem': 1rem,
+    'case': lowercase,
+    'line-height': 1.5,     
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  's-light': (
+    'family': 'Overpass',
+    'weight': 'Light',
+    'size': 12px,
+    'rem': 0.75rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  's-extralight': (
+    'family': 'Overpass',
+    'weight': 'ExtraLight',
+    'size': 12px,
+    'rem': 0.75rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  's-italic': (
+    'family': 'Overpass',
+    'weight': 'ExtraLight', 
+    'size': 12px,
+    'rem': 0.75rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  ),
+  
+  'base': (
+    'family': 'Overpass',
+    'weight': 'Light',
+    'size': 9px,
+    'rem': 0.56rem,
+    'case': lowercase,
+    'line-height': 1.05,    
+    'letter-spacing': -0.01em,
+    'max-width': 650px
+  )
+);
+
+
+$sp-01: 0.125rem;
+$sp-02: 0.25rem;
+$sp-03: 0.5rem;
+$sp-04: 0.75rem;
+$sp-05: 1rem;
+$sp-06: 1.25rem;
+$sp-07: 1.5rem;
+$sp-08: 2rem;
+$sp-09: 2.5rem;
+$sp-10: 2.75rem;
+$sp-11: 3rem;
+$sp-12: 3.5rem;
+$sp-13: 4rem;
+
+
+$radius-0: 0px;
+$radius-05: 0.125rem;
+$radius-1: 0.25rem;
+$radius-2: 0.5rem;
+$radius-4: 1rem;
+$radius-6: 1.5rem;  
+
+$border-2: 2px;
+$border-6: 6px;
+$border: 14px;

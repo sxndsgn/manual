@@ -1,7 +1,10 @@
+<script setup>
+
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <h6>Hola caracola</h6>
-    <NuxtWelcome />
-  </div>
+  
 </template>
+<style lang="scss"> 
+ @use '~/assets/sass/main.scss';
+</style>
