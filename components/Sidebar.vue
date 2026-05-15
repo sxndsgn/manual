@@ -5,11 +5,11 @@
   <nav class="navbar">
     <ul class="navbar-list">
       <li>
-        <NuxtLink to="/marca-grafica">Marca Gráfica</NuxtLink>
+        <NuxtLink to="/marca">Marca Gráfica</NuxtLink>
         <ul class="sub-list">
-          <li><NuxtLink to="/marca-grafica/logotipo">Logotipo</NuxtLink></li>
-          <li><NuxtLink to="/marca-grafica/relaciones-proporcionales">Relaciones proporcionales</NuxtLink></li>
-          <li><NuxtLink to="/marca-grafica/versiones">Versiones</NuxtLink></li>
+          <li><NuxtLink to="/marca?section=logotipo">Logotipo</NuxtLink></li>
+          <li><NuxtLink to="/marca?section=relacionesProporcionales">Relaciones proporcionales</NuxtLink></li>
+          <li><NuxtLink to="/marca?section=versiones">Versiones</NuxtLink></li>
         </ul>
       </li>
       <li><NuxtLink to="/tipografia">Tipografía</NuxtLink></li>

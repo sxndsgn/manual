@@ -16,9 +16,19 @@ const showSidebar = computed(() => {
     <div>
         <Header />
         <Sidebar v-if="showSidebar" />
-        <NuxtPage />
+        <div class="mainContent">
+            <NuxtPage />
+        </div>
+        
     </div>
 </template>
 
-<style> 
+<style lang="scss"> 
+@use './assets/sass/main';
+@use './assets/sass/partials/variables' as v;
+.mainContent {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    
+}
 </style>

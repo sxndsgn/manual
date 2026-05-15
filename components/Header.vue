@@ -1,24 +1,27 @@
-<script>
+<script setup>
 
 </script>
 
 <template>
     <header>
-        <div class="headerLeft">
-            <NuxtLink to="/">
-                <img src="/public/logo.svg" alt="">
-            </NuxtLink>  
-        </div>
+        <div class="headerContent">
+            <div class="headerLeft">
+                <NuxtLink to="/">
+                    <img src="/public/logo.svg" alt="">
+                </NuxtLink>  
+            </div>
 
-        <nav class="headerRight">
-            <ul>
-                <li>
-                    <NuxtLink to="/marca">Nuestra marca</NuxtLink>
-                </li>
-                <li>
-                    <NuxtLink to="/aplicaciones">Aplicaciones</NuxtLink></li>
-            </ul>
-        </nav>
+            <nav class="headerRight">
+                <ul>
+                    <li>
+                        <NuxtLink to="/marca">Nuestra marca</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/aplicaciones">Aplicaciones</NuxtLink></li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
 </template>
 
@@ -28,40 +31,45 @@
 
 
 header {
-    display: flex;
-    position: relative;
-    z-index: 2000; /* Superior al z-index 1000 del Sidebar */
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: v.$sp-13;
-    .headerLeft {
-        img {
-            width: 150px;
+    position: fixed;
+    width: 90%;
+    z-index: 2000; 
+    .headerContent{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: v.$sp-13;
+        .headerLeft {
+            img {
+                width: 150px;
+            }
         }
-    }
 
-    .headerRight {
-        ul {
-            display: flex;
-            gap: v.$sp-13;
+        .headerRight {
+            ul {
+                display: flex;
+                gap: v.$sp-13;
 
-            li {
-                list-style: none;
-                a {
-                    font-family: Overpass, sans-serif;
-                    font-size: 1rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    color: v.$color-primary;
-                    transition: color 0.3s ease;
+                li {
+                    list-style: none;
+                    a {
+                        font-family: Overpass, sans-serif;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: v.$color-primary;
+                        transition: color 0.3s ease;
 
-                    &:hover {
+                        &:hover {
                         color: v.$color-secondary;
+                        }
                     }
                 }
             }
         }
     }
+    
 }
 </style>
