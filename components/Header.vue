@@ -29,6 +29,8 @@
 
 header {
     display: flex;
+    position: relative;
+    z-index: 2000; /* Superior al z-index 1000 del Sidebar */
     justify-content: space-between;
     align-items: center;
     margin-bottom: v.$sp-13;
