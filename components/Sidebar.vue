@@ -25,7 +25,7 @@
 @use '../assets/sass/partials/variables' as v;
 
 .navbar {
-  background-image: url('../assets/img/FondoNavbarr.png');
+  background-image: url('../assets/img/FondoNavbarSF.png');
   background-size: 100% 100%; 
   background-position: left top; 
   background-repeat: no-repeat; 

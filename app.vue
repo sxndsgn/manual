@@ -7,8 +7,7 @@ import Sidebar from './components/Sidebar.vue'
 const route = useRoute()
 
 const showSidebar = computed(() => {
- 
-  return route.path === '/aplicaciones' || route.path === '/marca'
+  return route.path === '/marca' || route.path === '/tipografia'
 })
 </script>
 

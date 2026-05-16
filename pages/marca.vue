@@ -84,10 +84,11 @@ const versionesData = [
 
   </div>
   
+  
 
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @use '../assets/sass/main';
 @use '../assets/sass/partials/variables' as v;
 

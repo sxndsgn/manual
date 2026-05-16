@@ -16,7 +16,9 @@ defineProps({
         <p class="cardText">{{ texto }}</p>
     </div>
     
-    <div class="cardRight">
+
+    <div class="cardRight" v-if="foto">
+
         <img :src="`${foto}`" alt="" class="foto">
     </div>
   </div>

@@ -25,10 +25,9 @@
     </header>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @use '../assets/sass/main';
 @use '../assets/sass/partials/variables' as v;
-
 
 header {
     position: fixed;
