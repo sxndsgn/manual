@@ -34,6 +34,8 @@ header {
     position: fixed;
     width: 90%;
     z-index: 2000; 
+    margin-left: 2.75rem;
+    margin-top: 3.375rem;
     .headerContent{
         position: relative;
         display: flex;

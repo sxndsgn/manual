@@ -1,15 +1,18 @@
 <script setup>
  const props = defineProps({
         texto: String,
-        clase: String
+        clase: String,
+        ir: String
  })
  const irAMarca = () => {
-    navigateTo('/marca')
+    if (props.ir) {
+        navigateTo(props.ir)
+    }
 }
 </script>
 
 <template>
-    <button :class="clase" @click="irAMarca">{{ texto }}</button>
+    <button :class="clase" @click="navegar">{{ texto }}</button>
 </template>
 <style scoped lang="scss">
 @use '../assets/sass/main';
@@ -25,6 +28,7 @@ button{
     gap: v.$sp-02;
     padding: v.$sp-03 v.$sp-04;
     border-radius: v.$radius-2;
+    width: fit-content; 
 }
 .p-btn {
         background-color:v.$color-primary-very-dark;

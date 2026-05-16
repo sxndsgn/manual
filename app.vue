@@ -26,6 +26,11 @@ const showSidebar = computed(() => {
 <style lang="scss"> 
 @use './assets/sass/main';
 @use './assets/sass/partials/variables' as v;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 .mainContent {
     padding-top: 4rem;
     padding-bottom: 3rem;
