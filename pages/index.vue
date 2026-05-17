@@ -171,7 +171,7 @@ const atributos = [
     flex-direction: column;
     align-items: left;
     width: 40%;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 0;
     h1{
       font-family: movement, sans-serif;
@@ -201,7 +201,7 @@ const atributos = [
 }
 .valores{
   position: relative;
-  margin-top: 9rem;
+  margin-top: 17rem;
   margin-left: -4rem;
   margin-right: -4rem;
   padding-left: 4rem;
