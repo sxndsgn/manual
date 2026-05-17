@@ -27,7 +27,7 @@ const props = defineProps({
   }
   .subr {
     margin-top: -2.5rem;
-    width: 50%;
+    width: 40%;
   }
 }
 </style>

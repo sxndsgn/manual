@@ -7,13 +7,14 @@ import Sidebar from './components/Sidebar.vue'
 const route = useRoute()
 
 const showSidebar = computed(() => {
-  return route.path === '/marca' || route.path === '/tipografia'
+  return route.path === '/marca' || route.path === '/tipografia' || route.path === '/color' || route.path === '/elementos' || route.path === '/fotografia' 
 })
 </script>
 
 <template>
-    <div>
         <Header />
+
+    <div>
         <Sidebar v-if="showSidebar" />
         <div class="mainContent">
             <NuxtPage />
@@ -25,11 +26,9 @@ const showSidebar = computed(() => {
 <style lang="scss"> 
 @use './assets/sass/main';
 @use './assets/sass/partials/variables' as v;
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+
+
+
 .mainContent {
     padding-top: 4rem;
     padding-bottom: 3rem;

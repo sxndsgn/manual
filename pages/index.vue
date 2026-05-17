@@ -85,6 +85,12 @@ const atributos = [
 @use '../assets/sass/main';
 @use '../assets/sass/partials/variables' as v;
 
+.home{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .hero{
  .hero-background-img{
     position: absolute;
@@ -159,14 +165,14 @@ const atributos = [
     z-index: 5;
   }
   .hero-texto{
-    margin-top: 0%;
     margin-left: 10%;
     z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 40%;
-    margin-top: 8%;
+    margin-top: 20%;
+    margin-bottom: 0;
     h1{
       font-family: movement, sans-serif;
       font-size: 5.6rem;
@@ -195,23 +201,28 @@ const atributos = [
 }
 .valores{
   position: relative;
-  margin-top: 23rem;
+  margin-top: 9rem;
+  margin-left: -4rem;
+  margin-right: -4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 0;
       .valores-background{
         position: absolute;
         left: 50%;
         margin-top: -9rem;
         transform: translateX(-50%);
-        width: 100vw;  
+        width: 100%;  
         height: auto;
         object-fit: cover;
         z-index: -1;
         }
         .valores-items {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 10%;
-      align-items: flex-start;
-      gap: 2rem;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 10%;
+          align-items: flex-start;
+          gap: 2rem;
       
       .item {
         width: 30%;

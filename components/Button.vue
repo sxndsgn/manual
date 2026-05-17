@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <button :class="clase" @click="navegar">{{ texto }}</button>
+    <button :class="clase" @click="irAMarca">{{ texto }}</button>
 </template>
 <style scoped lang="scss">
 @use '../assets/sass/main';
@@ -48,7 +48,7 @@ button{
        }
        }
 .s-btn {
-        background-color:v.$color-secondary-light;
+        background-color:v.$color-secondary-medium-light;
         color: v.$color-primary-very-dark;
         &:hover{
             background-color: v.$color-primary-very-dark;

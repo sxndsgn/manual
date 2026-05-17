@@ -31,6 +31,7 @@ defineProps({
 .card{
     margin-top: 2rem;
     display: flex;
+    align-items: center;
     .cTitleSec {
         display: flex;
         align-items: center;
@@ -61,9 +62,10 @@ defineProps({
         display: flex;
         flex-direction: row;
         width: 100%;
+        height: 100%;
         .foto {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
     

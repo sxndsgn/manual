@@ -3,13 +3,7 @@ import Title from '../components/Title.vue'
 import Card from '../components/Card.vue'
 import VerticalCard from '~/components/VerticalCard.vue';
 
-import subrayado from '~/assets/img/subr_1.svg';
-import subrayado2 from '~/assets/img/subr_2.svg';
-import subrayado3 from '~/assets/img/subr_3.svg';
-import subrayado4 from '~/assets/img/subr_4.svg';
 import subrayado5 from '~/assets/img/subr_5.svg';
-import subrayado6 from '~/assets/img/subr_6.svg';
-import subrayado7 from '~/assets/img/subr_7.svg';
 import logoImg from '~/assets/img/logo.svg'
 import relProp from '~/assets/img/props.svg'
 import vColor from '~/assets/img/vColor.svg'
@@ -93,12 +87,11 @@ const versionesData = [
 @use '../assets/sass/partials/variables' as v;
 
 
-
 .pageContent {
   position: relative;
     .decoTop{
       position: absolute;
-      z-index: -1; // ← detrás de todo
+      z-index: -1; 
       pointer-events: none;
       height: 280px;
       margin-left: 10rem;
@@ -109,8 +102,8 @@ const versionesData = [
       z-index: 0;
       pointer-events: none;
       height: 400px;
-      margin-left: 81rem;
-      bottom: -10.5rem;
+      margin-left: 81.5rem;
+      bottom: -12em;
     }
     .sectionRelProp ~ .decoBottom{
       margin-left: 81rem;

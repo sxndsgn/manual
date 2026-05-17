@@ -33,14 +33,11 @@ header {
     position: fixed;
     width: 90%;
     z-index: 2000; 
-    margin-left: 2.75rem;
-    margin-top: 3.375rem;
     .headerContent{
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: v.$sp-13;
         .headerLeft {
             img {
                 width: 150px;

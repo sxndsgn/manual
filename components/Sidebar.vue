@@ -1,21 +1,23 @@
 <script setup>
+const route = useRoute()
+const isActive = (section) => route.query.section === section
 </script>
 
 <template>
   <nav class="navbar">
     <ul class="navbar-list">
       <li>
-        <NuxtLink to="/marca">Marca Gráfica</NuxtLink>
+        <NuxtLink to="/marca?section=logotipo">Marca Gráfica</NuxtLink>
         <ul class="sub-list">
-          <li><NuxtLink to="/marca?section=logotipo">Logotipo</NuxtLink></li>
+          <li><NuxtLink to="/marca?section=logotipo" >Logotipo</NuxtLink></li>
           <li><NuxtLink to="/marca?section=relacionesProporcionales">Relaciones proporcionales</NuxtLink></li>
           <li><NuxtLink to="/marca?section=versiones">Versiones</NuxtLink></li>
         </ul>
       </li>
       <li><NuxtLink to="/tipografia">Tipografía</NuxtLink></li>
       <li><NuxtLink to="/color">Color</NuxtLink></li>
-      <li><NuxtLink to="/estilo-fotograficos">Estilo Fotográficos</NuxtLink></li>
-      <li><NuxtLink to="/elementos-graficos">Elementos Gráficos</NuxtLink></li>
+      <li><NuxtLink to="/fotografia">Estilo Fotográfico</NuxtLink></li>
+      <li><NuxtLink to="/elementos">Elementos Gráficos</NuxtLink></li>
     </ul>
   </nav>
 </template>

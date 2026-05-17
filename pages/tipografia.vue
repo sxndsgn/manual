@@ -3,10 +3,10 @@ import Title from '../components/Title.vue'
 import Card from '../components/Card.vue'
 
 import subrayado5 from '~/assets/img/subr_5.svg';
-import tipoImg from '~/assets/img/Tipografia01.png'
-import tipoImg2 from '~/assets/img/Tipografia02.png'
-import tipoImg3 from '~/assets/img/Tipografia03.png'
-import tipoImg4 from '~/assets/img/Tipografia04.png'
+import tipoImg from '~/assets/img/Tipografia01.svg'
+import tipoImg2 from '~/assets/img/Tipografia02.svg'
+import tipoImg3 from '~/assets/img/Tipografia03.svg'
+import tipoImg4 from '~/assets/img/Tipografia04.svg'
 
 const route = useRoute();
 
@@ -27,6 +27,13 @@ const tipoData = [
     foto: tipoImg3
   }
 ];
+
+const pruebaData = [
+  {
+   titulo: 'Ejemplo de composición',
+   foto: tipoImg4 
+  }
+]
 </script>
 
 <template>
@@ -36,18 +43,14 @@ const tipoData = [
     <Title texto="TIPOGRAFÍA"  :subrayado="subrayado5"/>
 
       <div v-for="info in tipoData" :key="info.titulo" class="section">
-        <div class="cardWrapper">
-          <Card :titulo="info.titulo" :texto="info.texto"/>
-        </div>
-        <div class="imageWrapper">
-          <img :src="info.foto" alt="Tipografía" class="tipoImage"/>
-        </div>
+          <Card :titulo="info.titulo" :texto="info.texto" :foto="info.foto"/>
       </div>
-
+      
       <div class="section sectionComposition">
         <Card titulo="EJEMPLO DE COMPOSICIÓN" />
         <img :src="tipoImg4" alt="Ejemplo de composición" class="tipoImage compositionImage">
       </div>
+      
 
       <img src="../assets/img/cornerPaint.svg" alt="" class="decoBottom">
 
@@ -62,12 +65,11 @@ const tipoData = [
 @use '../assets/sass/partials/variables' as v;
 
 
-
 .pageContent {
   position: relative;
     .decoTop{
       position: absolute;
-      z-index: -1; // ← detrás de todo
+      z-index: -1; 
       pointer-events: none;
       height: 280px;
       margin-left: 10rem;
@@ -78,8 +80,8 @@ const tipoData = [
       z-index: 0;
       pointer-events: none;
       height: 400px;
-      margin-left: 81rem;
-      bottom: -10.5rem;
+      margin-left: 81.5rem;
+      bottom: -12em;
     }
     .sectionRelProp ~ .decoBottom{
       margin-left: 81rem;
@@ -87,14 +89,10 @@ const tipoData = [
     }
     .section{
       margin-left: 25rem;
-      margin-right: 5rem;
+      margin-right: 15rem;
       margin-top: v.$sp-10;
-      display: flex;
-      gap: 2rem;
-      align-items: flex-start;
     }
     .sectionComposition {
-      margin-top: 8rem; 
       display: block; 
       .compositionImage {
         margin-top: 0rem;
@@ -111,10 +109,12 @@ const tipoData = [
       margin-top: 2rem; 
     }
     .tipoImage {
+      margin-left: 2rem;
       width: 100%;
       height: auto;
       display: block;
     }
+
 }
 
 </style>

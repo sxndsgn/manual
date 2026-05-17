@@ -52,8 +52,9 @@ defineProps({
         margin-left: 2rem;
     }
     .foto{
-        margin-left: 1rem;
+        margin-left: 2rem;
         margin-top: .5rem;
+        
     }
 }
 </style>

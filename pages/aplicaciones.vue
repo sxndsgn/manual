@@ -28,6 +28,10 @@ const aplicaciones = [
 <style scoped lang="scss">
 @use '../assets/sass/main';
 @use '../assets/sass/partials/variables' as v;
+
+.aplicaciones{
+  margin: -7.9rem;
+}
 img{
   width: 100%;
   height: auto;
