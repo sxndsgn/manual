@@ -3,6 +3,9 @@
 </script>
 
 <template>
+    <div class="headerGradient">
+        
+    </div>
     <header>
         <div class="headerContent">
             <div class="headerLeft">
@@ -29,11 +32,33 @@
 @use '../assets/sass/main';
 @use '../assets/sass/partials/variables' as v;
 
-header {
+.headerGradient{
     position: fixed;
-    width: 90%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; 
+     background: linear-gradient(
+        to bottom,
+        v.$color-neutral 20%,
+        transparent 100%
+    );
+    z-index: 50; 
+    pointer-events: none;
+}
+
+header {
+    margin: -4rem;
+    padding: 0;
+    position: fixed;
+    width: 100%;
     z-index: 2000; 
+   
+    
     .headerContent{
+        margin: 4rem;
+        margin-bottom: 0;
+        width: 90%;
         position: relative;
         display: flex;
         justify-content: space-between;
